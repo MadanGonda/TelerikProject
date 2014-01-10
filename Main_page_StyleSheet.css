@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.c1 a:link {text-decoration:none; color: Black;}
+.c1 a:visited {text-decoration:none; color: Red;}
+.c1 a:active {text-decoration:none;  color: Green;}
+.c1 a:hover {text-decoration:none; color: Black;}
+
+
+
+.c1 a 
+{text-decoration: none;
+font-size:10px;}
+
+/*.d{background-color:Black; }*/

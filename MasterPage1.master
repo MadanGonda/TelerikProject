@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="Main_page_StyleSheet.css" />
+    <style type="text/css">
+        .style35
+        {
+            width: 883px;
+        }
+        .style37
+        {
+        }
+                
+        .style41
+        {
+            width: 349px;
+        }
+        a:link { color: Black;}
+        a:visited { color: Red;}
+        a:active {  color: #00ff00;}
+        a:hover { color: #00ff00;}
+        a{text-decoration:none; font-size:20px;}
+                
+        .MyButtonClass
+        {
+            position: relative;
+            left: -20px;
+        }
+        .style51
+        {
+            height: 4px;
+        }
+        .style56
+        {
+            width: 349px;
+            height: 7px;
+        }
+        .style58
+        {
+            height: 44px;
+        }
+        .style59
+        {
+            width: 177px;
+            height: 7px;
+        }
+        .style60
+        {
+        }
+        .style61
+        {
+            height: 119px;
+            width: 869px;
+        }
+        .style62
+        {
+            width: 651px;
+            height: 158px;
+        }
+        .style63
+        {
+            width: 779px;
+            height: 4px;
+        }
+        .style64
+        {
+            width: 869px;
+            height: 7px;
+        }
+        .style65
+        {
+            width: 869px;
+            height: 4px;
+        }
+        .style66
+        {
+            width: 666px;
+            height: 7px;
+        }
+        .style67
+        {
+            width: 666px;
+            height: 4px;
+        }
+        .style68
+        {
+            height: 119px;
+        }
+        .style69
+        {
+            width: 883px;
+            height: 7px;
+        }
+        .style70
+        {
+            width: 779px;
+            height: 7px;
+        }
+        </style>
+</head>
+<!--style="height:582px;-->
+<!--img src="Image/background_Image_1284by704.jpg" />-->
+<body style="background-image: url('Image/background_Image_1924by1098_bottam.jpg')" bgproperties="fixed">
+    <form id="form1" runat="server" method="post"> 
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+    </telerik:RadScriptManager>
+    <div style="height: 567px" >
+    <br />
+        <table style="width: 75%; height: 88%;" align="center"  border="0">
+            <tr>
+                <td colspan="1" align="left" class="style61">
+                    <!--h1>Head</h1-->
+                    <!--img src="Image/Health_logo_3.jpg" style="height: 121px; width: 182px" -->
+                    <telerik:RadButton ID="Rad_Home_Link" runat="server" Text="" Height="123px" 
+                        Width="182px" onclick="Rad_Home_Link_Click">
+                    <Image ImageUrl="Image/Home_log_182_123.jpg"  />
+                    </telerik:RadButton>
+
+                    </td><td colspan="5" align="right" class="style68">
+                    <img src="Image/background_right.jpg" 
+                        style="height: 159px; width: 577px; margin-bottom: 0px" /></td>
+                
+                  
+            </tr>
+            <tr>
+               
+                <td class="style64">
+                    &nbsp;</td>
+                <td class="style66">
+                    &nbsp;</td>
+                <td class="style70">
+                    </td>
+                <td class="style69">
+                    </td>
+                <td align="right" class="style56"  >
+                   <!-- <a href="Sign_In.aspx">Sign In</a>-->
+                    <telerik:RadButton ID="Rad_Button_Sign_out" runat="server" Text="Sign Out" 
+                        ButtonType="LinkButton" Font-Bold="true" Font-Size="Large" 
+                        onclick="Rad_Button_Sign_out_Click" Skin="Forest" >
+                    </telerik:RadButton>
+                    <telerik:RadButton ID="Rad_Button_Sign_In" runat="server" Text="Sign In" 
+                        ButtonType="LinkButton" onclick="RadButton1_Click" Font-Bold="True" 
+                        Font-Size="Large" Skin="Forest">
+                    </telerik:RadButton>
+                    </td>
+                <td align="right" class="style59" >
+                    <!--<a href="SignUp.aspx">Sign Up</a>-->
+                    <telerik:RadButton ID="Rad_Button_Sign_Up" runat="server" Text="Sign Up" 
+                        ButtonType="LinkButton" onclick="Rad_Button_Sign_Up_Click" 
+                        Font-Bold="True" Font-Size="Large" Skin="Forest">
+                    </telerik:RadButton>
+                    <telerik:RadButton ID="Rad_Mydesk_prof" runat="server" Text="MyDesk" 
+                        ButtonType="LinkButton"  Font-Bold="True" 
+                        Font-Size="Large" onclick="Rad_Mydesk_prof_Click" Skin="Forest">
+                    </telerik:RadButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="style58" colspan="6">
+                    <telerik:RadMenu ID="RadMenu1" Runat="server" 
+                        style="top: -2px; left: 1px; height: 40px" Width="100%">
+                        <Items>
+                            <telerik:RadMenuItem runat="server" Height="40px" NavigateUrl="~/Home.aspx" 
+                                Text="Home" Width="16.66%" Font-Size="Larger">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Height="40px" Text="About Us" 
+                                Width="16.66%" Font-Size="Larger" NavigateUrl="~/About_Us.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Height="40px" Text="Services"  
+                                Width="16.66%" NavigateUrl="~/Servicesaspx.aspx" Font-Size="Larger">
+                                <Items>
+                                    <telerik:RadMenuItem runat="server" 
+                                        NavigateUrl="~/Copy of Helth_CheckUp_Desk.aspx" Text="Health Desk" 
+                                        Width="200px" Font-Size="Larger">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" NavigateUrl="~/Medicine_Bank.aspx" Text="Medicine Bank" 
+                                        Width="200px" Font-Size="Larger">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" NavigateUrl="~/Research_Work.aspx" 
+                                        Text="Research Work" Width="200px" Font-Size="Larger">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" Font-Size="Larger" 
+                                        NavigateUrl="~/Admin_page.aspx" Text="Admin Login" Width="200px">
+                                    </telerik:RadMenuItem>
+                                </Items>
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Height="40px" Text="Contact us" 
+                                Width="16.66%" Font-Size="Larger" NavigateUrl="~/Contacat_us.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Height="40px" Text="S! Box" Width="16.66%" 
+                                NavigateUrl="~/Suggetion_box.aspx" Font-Size="Larger">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Height="40px" Text="Search" Width="16.66%" 
+                                Font-Size="Larger">
+                            <ItemTemplate>
+                            <telerik:RadTextBox runat="server" ID="Radtextmenue" ShowButton="true" ButtonCssClass="MyButtonClass"></telerik:RadTextBox>
+                            </ItemTemplate>
+                            </telerik:RadMenuItem>
+                        </Items>
+                    </telerik:RadMenu>
+                    </td>
+            </tr>
+            <tr>
+                <td class="style65">
+                    </td>
+                <td class="style67">
+                    &nbsp;</td>
+                <td class="style63">
+                    &nbsp;</td>
+                <td class="style51" colspan="3">
+                    <br /></td>
+            </tr>
+            <tr>
+                <td colspan="6">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style37" colspan="3">
+                    <img class="style62" src="Image/background_Bottam_Left.jpg" /></td>
+                <td class="style35">
+                    &nbsp;</td>
+                <td class="style41">
+                    &nbsp;</td>
+                <td class="style60">
+                    &nbsp; 
+                    
+                    </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
